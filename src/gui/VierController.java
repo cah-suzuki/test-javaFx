@@ -1,6 +1,8 @@
 package gui;
 
+import gui.util.Alerts;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 
 public class VierController {
@@ -9,7 +11,7 @@ public class VierController {
 	private Button btTest;
 	
 	public void onBtTestAction() {
-		System.out.print("Click!");
+		Alerts.showAlert("Alert title","Alert header","Hello",AlertType.INFORMATION);
 	}
 	
 
